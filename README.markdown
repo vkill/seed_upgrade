@@ -23,6 +23,13 @@ Then run:
     rails generate seed_upgrade:install
 
 
+##Uninstallation
+
+run:
+
+    rails destroy seed_upgrade:install
+
+
 ##Usage Example
 
 When your generate post model, then hook invoke, create `db/seeds/post.rb` file
