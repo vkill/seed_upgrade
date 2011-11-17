@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = SeedUpgrade::VERSION
   s.authors     = ["vkill"]
   s.email       = ["vkill.net@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/vkill/seed_upgrade"
+  s.summary     = "A seed upgrade plugin for Rails3."
+  s.description = "A seed upgrade plugin for Rails3."
 
   s.rubyforge_project = "seed_upgrade"
 
