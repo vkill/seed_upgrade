@@ -4,6 +4,5 @@ require "rails"
 require "seed_upgrade/railtie"
 
 module SeedUpgrade
-  # Your code goes here...
 end
 

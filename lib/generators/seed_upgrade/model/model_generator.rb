@@ -3,14 +3,11 @@ class SeedUpgrade::ModelGenerator < Rails::Generators::NamedBase
 
   def create_seed
     create_file "db/seeds/#{ singular_name }.rb" do
-      case Rails.application.config.generators.options[:rails][:fixture_replacement].to_s
-      when "machinist"
-        "#{ human_name }.make!" if defined?(::Machinist)
-      when "factory_girl"
-        "Factory #{ singular_name }" if defined?(::Factory)
-      else
-        ""
-      end
+      %Q`
+10.times do
+  #{ human_name }.make!
+end
+`
     end
   end
 end
