@@ -25,7 +25,7 @@ Then run:
 
 ##Uninstallation
 
-run:
+Run:
 
     rails destroy seed_upgrade:install
 
@@ -47,6 +47,7 @@ When your generate post model, then hook invoke, create `db/seeds/post.rb` file
 Then run the following command, the rake is in `lib/tasks/application.rake`, it auto load `db/seeds/post.rb`
 
     bundle exec rake app:dev:reload
+
 
 
 ##Copyright
