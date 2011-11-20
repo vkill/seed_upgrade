@@ -15,7 +15,7 @@ SeedUpgrade is a seed upgrade plugin for Rails3.
 
 In your app's `Gemfile`, add:
 
-    gem "seed_upgrade", "~> 0.1.0"
+    gem "seed_upgrade"
 
 Then run:
 
