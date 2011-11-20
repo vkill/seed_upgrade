@@ -19,34 +19,41 @@ In your app's `Gemfile`, add:
 
 Then run:
 
-    bundle
-    rails generate seed_upgrade:install
+    > bundle
+    > rails generate seed_upgrade:install
 
 
 ##Uninstallation
 
 Run:
 
-    rails destroy seed_upgrade:install
+    > rails destroy seed_upgrade:install
 
 
 ##Usage Example
 
 When your generate post model, then hook invoke, create `db/seeds/post.rb` file
 
-    rails g model post title:string
-      invoke  active_record
-      create    db/migrate/20111117151257_create_posts.rb
-      create    app/models/post.rb
-      invoke    test_unit
-      create      test/unit/post_test.rb
-      create      test/fixtures/posts.yml
-      invoke  seed_upgrade
-      create    db/seeds/post.rb
+    > rails g model post title:string
+        invoke  active_record
+        create    db/migrate/20111117151257_create_posts.rb
+        create    app/models/post.rb
+        invoke    test_unit
+        create      test/unit/post_test.rb
+        create      test/fixtures/posts.yml
+        invoke  seed_upgrade
+        create    db/seeds/post.rb
+
+If your models has been created, you want generate model seed,very easy also, run
+
+    > rails g seed_upgrade:revise_model
+        create  db/seeds/post.rb
+        create  db/seeds/post_test.rb
+        create  db/seeds/user.rb
 
 Then run the following command, the rake is in `lib/tasks/application.rake`, it auto load `db/seeds/post.rb`
 
-    bundle exec rake app:dev:reload
+    > bundle exec rake app:dev:reload
 
 
 ##Copyright
