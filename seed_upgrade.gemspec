@@ -23,6 +23,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec"
   s.add_development_dependency "guard-rspec"
   s.add_dependency "rails", "~> 3.0"
+  s.add_dependency "vkill_gems_methods", "~> 0.1.0"
   s.add_dependency "machinist", "~> 2.0.0.beta2"
+
 end
 
